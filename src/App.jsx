@@ -24,10 +24,10 @@ const App = () => {
                   <p className="blackbolsd">{obj.title}</p>
                   <p>{obj.type}</p>
 
-                  {/* </div>
-              <div className="duration"> */}
-                  <p>{obj.duration}</p>
-                  {obj.direct && <p className="colordirect">Direct</p>}
+                  <div className="duration">
+                    <p className="black">{obj.duration}</p>
+                    {obj.direct && <p className="colordirect">Direct</p>}
+                  </div>
                 </div>
               </div>
             </div>
