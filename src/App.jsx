@@ -19,9 +19,16 @@ const App = () => {
               <div className="flexprogramme">
                 <h3>{obj.time}</h3>
                 <img src={obj.image} alt="" />
-                <p>{obj.title}</p>
-                <p>{obj.type}</p>
-                <p>{obj.duration}</p>
+
+                <div className="felxtitle">
+                  <p className="blackbolsd">{obj.title}</p>
+                  <p>{obj.type}</p>
+
+                  {/* </div>
+              <div className="duration"> */}
+                  <p>{obj.duration}</p>
+                  {obj.direct && <p className="colordirect">Direct</p>}
+                </div>
               </div>
             </div>
           </>
